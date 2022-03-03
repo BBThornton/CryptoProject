@@ -1,5 +1,4 @@
-# Decentralisation is a Lie
-# Trust/Centralisation is Inevitable
+# Centralisation is Inevitable
 Note Created: 2022-01-28
 
 # In proof of work
