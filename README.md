@@ -1,7 +1,7 @@
 # Notes for the mining in the browser project
 ## Current TODO / Problems List
 [[TODO]]
-[TODO File](notes/TODO.md)
+[TODO File](./Notes/TODO.md)
 
 Using Foam to organise 
 ---
