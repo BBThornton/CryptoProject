@@ -17,6 +17,8 @@ Change the Network ID **Line 218**
 
 Change the network ID of the stagenet and testnet (final byte increase by one)
 
+Remove the seednodes from net_node.h and .inl
+
 # set this to 0 if per-block checkpoint needs to be disabled
 set(PER_BLOCK_CHECKPOINT 0)
 
