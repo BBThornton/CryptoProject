@@ -3,6 +3,9 @@
 # Monetisation of Digital Media Through Browser-Based Mining of a Dedicated Centralised Cryptocurrency
 This contains the notes regarding the crypto currency mining in the browser project.
 
+# Report Plan
+- [[Report Plan]]
+
 # Blockchain Research
 - [[Centralisation is Inevitable]]
 - [[Mining Pool Theory]]
