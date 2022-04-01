@@ -15,3 +15,4 @@ cp -r ~/source/monero/build/Linux/release-v0.17/release/bin/* ~/app/monero/
 
 ## Run Monero Code
 > https://www.getmonero.org/resources/user-guides/vps_run_node.html
+[[Run Commands]]
