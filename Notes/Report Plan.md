@@ -9,18 +9,44 @@ Note Created: 2022-03-24
   - Brief Description of some potential use cases (Educational platform, opensource project funding/attribution of ownership)
     - For these applications to be feasible the mining methods of cryptocurrencies need to be improved, to provide stability and increase scalability without restricting content access.
   - This report outline a dedicated decentralised cryptocurrency that is only minable via a permissioned pool... providing the stability and accessibility these applications require 
-
+- Numbered table of the project goals (for reference in the evaluation section of the report)
+- Review/State the purpose of the proposed solution
+  - To support a browser based mining ecosystem(s) by allowing users to have access to content for "free" where the *price* paid is the mining of the cryptocurrency, which is rewarded directly to the content host.
 # A summary of the literature review and project spec (Part of markscheme)
 - I will take the following sections?
   - Section 1.2 (cryptocurrencies and Browser based mining)
   - The summary section of consensus algorithms
   - Summary of mining pool section
-  - Numbered table of the project goals (for reference in the evaluation section of the report)
+  
+
+# Requirements
+In a stratified way
+Usecase requirements - non-functional
+
+# Process 
+Is the theoretical model
+
+
+
+
+# Testing and Experimentation
+Mention the unit tests, Test report (demonstrate)
+Integration test 
+  - Can I mine in the browser
+  - Is the reward decoupled
+  - Is the currency permissioned
+  - Can the currency be flooded via ASIICS
+
+# Product and fitness for purpose
+Technical parts
+
+# Results and evaluation
+
+
+
 
 # WhitePaper section (Spec and Design Mark scheme Criteria)
 ## Overview Of Design
-- Review/State the purpose of the proposed solution
-  - To support a browser based mining ecosystem(s) by allowing users to have access to content for "free" where the *price* paid is the mining of the cryptocurrency, which is rewarded directly to the content host.
 - Open with an architecture image detailing:
   - The blockchain network (highly abstracted, just some nodes connected together)
   - The mining pool
@@ -64,11 +90,41 @@ Note Created: 2022-03-24
 - At the same time I'm not sure how to incorporate this yet, especially given the system is barely working 
 - In an Ideal world I will get over these implementation bottlenecks, quickly slap together a website and so some mining simulation stuff using the browser
 
+
+# Evaluation
+Summarise the different contributions.
+
 # Discussion about potential applications
 - Detailed discussion about applications
   - Educational platform
   - Application to a tokenised internet (copyright attribution)
 - Again not sure how I'm going to bring these together or how they really fit
 
-# Evaluation
 # Conclusion
+
+A theorectical framework for monitisation of digital Media 
+  Formalisation of the idea 
+Detail 
+
+
+# specification
+- functional requirement
+  - It needs to be throttled for it to be sustainable
+  - Heres the theory 
+
+# Results 
+- show graphs of performance
+- Mining requirements
+- Reward distribution
+
+# Evaluation 
+- discus the usecases and applications and implications of the eco system 
+
+# Process 
+
+
+Describe the requrements in the Design
+
+proceess is the theoretical 
+
+testing is 
