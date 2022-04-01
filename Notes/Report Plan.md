@@ -18,34 +18,25 @@ Note Created: 2022-03-24
   - The summary section of consensus algorithms
   - Summary of mining pool section
   
+ ---
 
-# Requirements
-In a stratified way
-Usecase requirements - non-functional
+ # V Model
+# Requirements Analysis (MS: Specification *would also be used at the end for evaluation*)
+Describe the content monetisation use case (high level) to preface the rest of the paper (THIS WOULD LIKELY BE PART OF THE INRO)
+Discuss the primary requirements of the system wrapping them in the associated theory i.e.
+- Mining needs to be possible in the browser on low powered devices
+  - Discuss that most of internet access is done through low powered device not capable of competitively partaking in the mining of pre-existing cryptocurrencies
+- Mining needs to be throttled to address the hardware inequality problems and provide stability
+  - Would discuss the volatile nature of cryptocurrencies and how they are linked to the hardware inequality problems of PoW mining
+- The mining process must be permissioned allowing the mining to only be used for the use case of content monetisation. Again providing stability and also allows mining to be used as a proxy for user engagement.
+- Rewards (for the creators/miners) need to be decoupled from the hardware the miner is using
+  - Discuss how the amount of reward a content creator gets should scale based on number of engaged users and not the hardware spec of the users.
 
-# Process 
-Is the theoretical model
-
-
-
-
-# Testing and Experimentation
-Mention the unit tests, Test report (demonstrate)
-Integration test 
-  - Can I mine in the browser
-  - Is the reward decoupled
-  - Is the currency permissioned
-  - Can the currency be flooded via ASIICS
-
-# Product and fitness for purpose
-Technical parts
-
-# Results and evaluation
-
-
-
-
-# WhitePaper section (Spec and Design Mark scheme Criteria)
+# System/Architectural Design (MS: Design)
+**Could throw in a system test plan here**
+This would be the theoretical design (The theoretical white paper)
+Discuss the mining pool and permission, system. 
+Each part would be linked back to a system requirement
 ## Overview Of Design
 - Open with an architecture image detailing:
   - The blockchain network (highly abstracted, just some nodes connected together)
@@ -67,64 +58,47 @@ Technical parts
   - Once a miner submits a block solution to the pool, the pool verifies the hash and submits it to the blockchain, Receiving the block reward, which is then distributed according to the reward function (outlined above)
   - This decouples the hardware quality/power from the mining process as within any particular block cycle any one user is caped to the threshold
 - This process allows PoW mining to be a measure of engagement, a proxy for a proof of time, with time spend mining = time spent using the resource.
-
-
 ### Permissioned & authenticated (Security)
 - This is only possible as the mining pools are controlled by a central authority and mining is only possible via those pools. This means PoW is not responsible for block consensus as that is the role of the "trusted" mining pool nodes
 - This is what allows the alteration to the mining incentives
 - Mining nodes can only be accessed when miners have been authenticated via a "typical" authentication server. This ensures that mining/rewards can be accurately used to monitor engagement as mining is only possible when engaging with content.(Via the authentication portal)
 
-### Network/Interaction Diagram (outlining how a user would interact with the system?)
-- Scope to discuss the "protocol" that allows the system to function
-  - Authentication via server
-  - requests new connection from mining pool
-  - miner uses the connection until mining is stopped.
-  - **This would need formalising, which would be easier if the practical application was working**
-  - 
-### Security Concerns (Threat Modelling)
+# Module Design and Coding Phase (MS: Product and Fitness for Purpose)
+Here I would discuss the actual implementation process
+- Forking of a cryptocurrency and the devops pipeline
+- The major changes to the pool logic
+  - Here I could formalise some of the logic as a flow chart to demonstrate how the pool code works
+
+# Unit/Integration testing (MS: Testing/Experimental)
+- Can discuss the unit tests that run when the blockchain is build
+  - Can also write some tests for the mining pool code
+- Can write a test plan for the Integration testing, testing the communication between miners and pools, pools and nodes and nodes and the Chain
+  - Here could also be the place to test that rewards go to creator wallets and not miner wallets
+
+# System/Acceptance Testing (MS: Testing & results and evaluation)
+Here would present the results that verify the initial requirements of the system spec.
+- Graphs demonstrating the throttled mining speeds
+- Chart that show that lower spec devices provide the same (or similar) levels of currency to creators as higher spec
+- etc.
+
+# Results & Evaluation
+Discuss that I met the system requirements
+Mention the possible setbacks for a full system roll out
+## Security Concerns (Threat Modelling)
 - Potentially talk about the Sybil attack/bot issue...
 - With some proposed solution, Chain of trust, Network analysis
 
-# Implementation Section (If it ever f***ing works)
-- Not sure about this section. I would like to talk about the difficulties associated with forking a cryptocurrency i.e. security through obscurity problems, and also detail the non-triviality/devops associated with hosting this platform.
-- At the same time I'm not sure how to incorporate this yet, especially given the system is barely working 
-- In an Ideal world I will get over these implementation bottlenecks, quickly slap together a website and so some mining simulation stuff using the browser
+# Discussion/Conclusion
+try to "justify" the primary contributions of the project
+*Use lots of flashy words like "novel approach" to hammer home that my contributions are progressing the field*
+Both the theoretical design and practical implementation of:
+- Demonstrated an new blockchain framework that could be used to support monetisation of open content
+- Made possible by a new variation on mining pools which utilise traditional user authentication
+- And a new reward function which decouples hardware performance from the mining reward, and thus can be used as a method of measuring resource engagement
+- A novel approach to mining difficulty management, utilising permissioned systems, in order to allow low powered hardware to actively engage in the mining process
+- A web based platform which is able to allow users to mine as part of this system, but **most importantly** rewards the creators directly and not the miners themselves
+## Conclude
+Future works, happy dance
 
-
-# Evaluation
-Summarise the different contributions.
-
-# Discussion about potential applications
-- Detailed discussion about applications
-  - Educational platform
-  - Application to a tokenised internet (copyright attribution)
-- Again not sure how I'm going to bring these together or how they really fit
-
-# Conclusion
-
-A theorectical framework for monitisation of digital Media 
-  Formalisation of the idea 
-Detail 
-
-
-# specification
-- functional requirement
-  - It needs to be throttled for it to be sustainable
-  - Heres the theory 
-
-# Results 
-- show graphs of performance
-- Mining requirements
-- Reward distribution
-
-# Evaluation 
-- discus the usecases and applications and implications of the eco system 
-
-# Process 
-
-
-Describe the requrements in the Design
-
-proceess is the theoretical 
-
-testing is 
+# MS: Process
+Covered by the whole document by following a slightly butchered version of the V-Model
