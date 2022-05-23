@@ -67,3 +67,8 @@ sudo nano /etc/nginx/nginx.conf
 
 # COIN defined at:
 CurrencyBuilder &CurrencyBuilder::numberOfDecimalPlaces
+
+
+
+GETTING Hashrate could be defined as the spped at which the threshold is met. 
+Therefore the slowest miner is always the one who go to the threshold the slowest (on average)
